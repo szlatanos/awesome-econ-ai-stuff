@@ -111,9 +111,9 @@ compatibility: [claude-code, cursor, codex, gemini-cli]
 
 ### 🆕 Propose a New Skill
 
-**[Submit via Web Form →](https://yourusername.github.io/awesome-econ-ai-stuff/submit)**
+**[Submit via Web Form →](https://meleantonio.github.io/awesome-econ-ai-stuff/submit)**
 
-Or open an [Issue](https://github.com/yourusername/awesome-econ-ai-stuff/issues/new?template=skill-proposal.md).
+Or open an [Issue](https://github.com/meleantonio/awesome-econ-ai-stuff/issues/new?template=skill-proposal.md).
 
 ---
 
@@ -144,7 +144,7 @@ Or open an [Issue](https://github.com/yourusername/awesome-econ-ai-stuff/issues/
 We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 **Ways to contribute:**
-- 🆕 Submit new skills via the [web form](https://yourusername.github.io/awesome-econ-ai-stuff/submit)
+- 🆕 Submit new skills via the [web form](https://meleantonio.github.io/awesome-econ-ai-stuff/submit)
 - 🐛 Report issues or suggest improvements
 - 📖 Improve documentation
 - ⭐ Star this repo to show support

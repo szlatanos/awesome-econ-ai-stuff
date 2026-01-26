@@ -83,7 +83,7 @@ async function submitSkill(skillData) {
     const issueBodyEncoded = encodeURIComponent(issueBody);
 
     // Redirect to GitHub issue creation
-    const issueUrl = `https://github.com/yourusername/awesome-econ-ai-stuff/issues/new?title=${issueTitle}&body=${issueBodyEncoded}&labels=skill-proposal`;
+    const issueUrl = `https://github.com/meleantonio/awesome-econ-ai-stuff/issues/new?title=${issueTitle}&body=${issueBodyEncoded}&labels=skill-proposal`;
 
     window.open(issueUrl, '_blank');
 

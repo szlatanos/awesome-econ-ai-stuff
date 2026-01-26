@@ -16,11 +16,11 @@ Thank you for your interest in contributing! This guide explains how to submit n
 
 ### Option 1: Web Form (Easiest)
 
-Use our **[Skill Submission Form](https://yourusername.github.io/awesome-econ-ai-stuff/submit)** which automatically creates a pull request.
+Use our **[Skill Submission Form](https://meleantonio.github.io/awesome-econ-ai-stuff/submit)** which automatically creates a pull request.
 
 ### Option 2: GitHub Issue
 
-Open a [Skill Proposal Issue](https://github.com/yourusername/awesome-econ-ai-stuff/issues/new?template=skill-proposal.md) with your skill details.
+Open a [Skill Proposal Issue](https://github.com/meleantonio/awesome-econ-ai-stuff/issues/new?template=skill-proposal.md) with your skill details.
 
 ### Option 3: Direct Pull Request
 
@@ -174,4 +174,4 @@ Choose the most appropriate stage for your skill:
 
 ## Questions?
 
-Open a [Discussion](https://github.com/yourusername/awesome-econ-ai-stuff/discussions) or reach out to the maintainers.
+Open a [Discussion](https://github.com/meleantonio/awesome-econ-ai-stuff/discussions) or reach out to the maintainers.

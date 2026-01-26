@@ -1,6 +1,6 @@
 title: Awesome Econ AI Stuff
 description: AI skills for economists - from data analysis to paper writing
-url: https://yourusername.github.io/awesome-econ-ai-stuff
+url: https://meleantonio.github.io/awesome-econ-ai-stuff
 baseurl: ""
 
 # Build settings
@@ -49,7 +49,6 @@ twitter:
 social:
   name: Awesome Econ AI Stuff
   links:
-    - https://github.com/yourusername/awesome-econ-ai-stuff
-
+    - https://github.com/meleantonio/awesome-econ-ai-stuff
 # Analytics (optional - add your tracking ID)
 # google_analytics: UA-XXXXXXXX-X
