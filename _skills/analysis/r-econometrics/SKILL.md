@@ -199,4 +199,3 @@ install.packages(c("fixest", "modelsummary", "tidyverse"))
 
 ### v1.0.0
 - Initial release with IV, DiD, RDD support
-
