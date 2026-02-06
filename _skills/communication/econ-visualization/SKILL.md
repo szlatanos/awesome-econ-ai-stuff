@@ -149,14 +149,13 @@ PlotStatesShaded(Time, qData);
 % ----------------------------------------
 % Core function: PlotStatesShaded
 % ----------------------------------------
-function PlotStatesShaded(Time, qS, color, transparency)
+function PlotStatesShaded(Time, qS, color)
     % Plots time series with nested Bayesian credible intervals
     %
     % Parameters:
     %   Time - Time vector (datetime, datenum, or numeric)
     %   qS - Matrix with columns [q05, q16, q50, q84, q95]
     %   color - RGB triplet (default: [0.5 0.6 1])
-    %   transparency - Alpha value 0-1 (default: 0.5)
     %
     % Creates:
     %   - Outer band (5%-95% credible interval) in lighter shade
@@ -164,19 +163,18 @@ function PlotStatesShaded(Time, qS, color, transparency)
     %   - Median line (50th percentile)
     %   - Zero reference line
 
-    if nargin < 4, transparency = 0.5; end
     if nargin < 3, color = [0.5 0.6 1]; end  % Default blue
 
     linecolor = color * 0.65;  % Darken for median line
 
     % Outer band (90% credible interval: 5th to 95th percentile)
     fill([Time; flip(Time)], [qS(:,1); flip(qS(:,5))], ...
-         0.9*color, 'LineStyle', 'none', 'FaceAlpha', transparency);
+         0.9*color, 'LineStyle', 'none');
     hold on;
 
     % Inner band (68% credible interval: 16th to 84th percentile)
     fill([Time; flip(Time)], [qS(:,2); flip(qS(:,4))], ...
-         0.6*color, 'LineStyle', 'none', 'FaceAlpha', transparency);
+         0.6*color, 'LineStyle', 'none');
 
     % Median line (50th percentile)
     plot(Time, qS(:,3), '-', 'Color', linecolor, 'LineWidth', 0.5);
@@ -307,7 +305,7 @@ function addRecessionShading(recessionDates)
         fill([recessionDates(i,1), recessionDates(i,2), ...
               recessionDates(i,2), recessionDates(i,1)], ...
              [ylims(1), ylims(1), ylims(2), ylims(2)], ...
-             [0.9 0.9 0.9], 'EdgeColor', 'none', 'FaceAlpha', 0.3);
+             [0.9 0.9 0.9], 'EdgeColor', 'none');
     end
 
     % Bring plot elements to front
@@ -522,7 +520,7 @@ ggplot(event_study, aes(x = period, y = coef)) +
 - Using `subplot` instead of `tiledlayout` (outdated)
 - Not setting exact paper dimensions (causes whitespace issues)
 - Forgetting to specify `'Interpreter', 'latex'` for math notation
-- Plotting without transparency for overlapping elements
+- Using `'FaceAlpha'` or `'MarkerFaceAlpha'` — these cause `exportgraphics` with `'ContentType', 'vector'` to fail silently on some MATLAB versions; use lighter RGB colors instead
 - Not handling date formatting properly
 
 ### Bayesian Uncertainty
